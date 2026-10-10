@@ -1,0 +1,75 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788790984.5674272,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "kozea__weasyprint-2058",
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 0,
+  "model_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "position": 1,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "5fe4ca4808010182f53f455917bef86c1abc0638",
+  "repo_head_before": "dcf70993db4d1610e7fa189b897afa990c80b6bb",
+  "repo_head_model": "1498d248b06e1299a938e87985f777c84096c829",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1913.159,
+  "started_at": 1788789071.4086976,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "Applied patch to 'tests/draw/test_table.py' cleanly.\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/draw/test_table.py::test_tables_24_rtl'",
+        "index": 1,
+        "rc": 1,
+        "seconds": 1.734,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/draw/test_table.py::test_tables_24_rtl"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [],
+    "p2p_all_pass": false,
+    "p2p_total": 0,
+    "test_cmds": [
+      "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/draw/test_table.py::test_tables_24_rtl'"
+    ]
+  },
+  "tool_call_stats": {
+    "execute_bash": 0,
+    "finish": 0,
+    "str_replace_editor": {}
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

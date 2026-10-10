@@ -1,0 +1,42 @@
+{
+  "api_key_logged": false,
+  "cases": {
+    "forced": {
+      "content_looks_like_text_tool_call": true,
+      "content_present": true,
+      "finish_reason": "stop",
+      "http_status": 200,
+      "raw_tool_call_problems": [
+        "message.tool_calls is absent or empty"
+      ],
+      "raw_tool_calls_present": false,
+      "raw_tool_calls_valid": false,
+      "sdk": {
+        "available": true,
+        "message": {
+          "content": "I'll help you fix this issue with text overlapping collapsed borders in RTL tables. Let me start by exploring the repository structure.\n<run_shell_cmd<arg_key>command</arg_key><arg_value>cd /testbed && ls -la</arg_value></tool_call>",
+          "provider_specific_fields": {
+            "reasoning_content": "Let me start by exploring the repository structure to understand the codebase.\n\nThe issue is about text overlapping with collapsed borders in tables when using `direction: rtl` (right-to-left) style. The problem appears to be that when a table has `direction: rtl`, the text in the cells overlaps with the left and right borders.\n\nLet me break this down:\n1. The issue involves tables with collapsed borders\n2. The issue is specific to `direction: rtl` tables\n3. The text overlaps with the left and right borders\n\nLet me first explore the repository structure to understand how it's organized.",
+            "refusal": null
+          },
+          "reasoning_content": "Let me start by exploring the repository structure to understand the codebase.\n\nThe issue is about text overlapping with collapsed borders in tables when using `direction: rtl` (right-to-left) style. The problem appears to be that when a table has `direction: rtl`, the text in the cells overlaps with the left and right borders.\n\nLet me break this down:\n1. The issue involves tables with collapsed borders\n2. The issue is specific to `direction: rtl` tables\n3. The text overlaps with the left and right borders\n\nLet me first explore the repository structure to understand how it's organized.",
+          "role": "assistant"
+        },
+        "parse_ok": true,
+        "tool_calls_present": false
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "verdict": "GATEWAY_RETURNED_TEXT_INSTEAD_OF_NATIVE_TOOL_CALL"
+    }
+  },
+  "created_at": 1788835494.5911176,
+  "endpoint": "http://10.101.56.66:4081/chat/completions",
+  "model": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "schema_version": 1
+}

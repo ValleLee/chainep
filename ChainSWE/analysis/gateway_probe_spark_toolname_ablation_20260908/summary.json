@@ -1,0 +1,32 @@
+{
+  "A_minimal_control": {
+    "id": "cht000d07fd@dx1a07ec75b032885503",
+    "finish_reason": "tool_calls",
+    "tool_calls": 1,
+    "content_head": ""
+  },
+  "B_concise_renamed_tool": {
+    "id": "cht000df3e7@dx1a07ec7624d2875503",
+    "finish_reason": "tool_calls",
+    "tool_calls": 1,
+    "content_head": "I'll start by inspecting the repository structure to understand the codebase."
+  },
+  "C_exact_renamed_tool": {
+    "id": "cht000df5b0@dx1a07ec76cb22875503",
+    "finish_reason": "tool_calls",
+    "tool_calls": 1,
+    "content_head": "I'll help you fix this issue with text overlapping collapsed borders in RTL tables. Let me start by exploring the repository structure."
+  },
+  "D_minimal_one_tool": {
+    "id": "cht000d8304@dx1a07ec7886529db503",
+    "finish_reason": "tool_calls",
+    "tool_calls": 1,
+    "content_head": ""
+  },
+  "E_concise_no_force": {
+    "id": "cht000d8486@dx1a07ec7934129db503",
+    "finish_reason": "tool_calls",
+    "tool_calls": 1,
+    "content_head": ""
+  }
+}

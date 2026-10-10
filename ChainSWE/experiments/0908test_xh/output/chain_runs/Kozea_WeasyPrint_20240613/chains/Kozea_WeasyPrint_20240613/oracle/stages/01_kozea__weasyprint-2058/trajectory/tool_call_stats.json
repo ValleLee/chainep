@@ -1,0 +1,9 @@
+{
+  "run_shell": 23,
+  "file_editor": {
+    "create": 2,
+    "str_replace": 1,
+    "view": 3
+  },
+  "finish": 0
+}

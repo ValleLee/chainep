@@ -1,0 +1,75 @@
+{
+  "agent_error": null,
+  "agent_status": "completed",
+  "agent_type": "baseline",
+  "failure_type": "TEST_COMMAND_FAILED",
+  "finished_at": 1788841561.8086762,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "kozea__weasyprint-2231",
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 0,
+  "model_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "position": 3,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "47a5cd12690a094a11d8f85afa8d3ff9430ce4ae",
+  "repo_head_before": "302b35dea6b68dffd2f40a6057ab025e41d9df17",
+  "repo_head_model": "a9c910f8447270f8cd0f7ac8fbc52b4fb504444c",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1079.426,
+  "started_at": 1788840482.3828216,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "Applied patch to 'tests/layout/test_flex.py' cleanly.\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_column_width'",
+        "index": 1,
+        "rc": 1,
+        "seconds": 1.991,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/layout/test_flex.py::test_flex_column_width"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [],
+    "p2p_all_pass": false,
+    "p2p_total": 0,
+    "test_cmds": [
+      "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_column_width'"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {},
+    "finish": 0,
+    "run_shell": 0
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

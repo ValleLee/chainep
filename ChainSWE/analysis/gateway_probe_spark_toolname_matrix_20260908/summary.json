@@ -1,0 +1,117 @@
+{
+  "exact_forced_ORIGNAME": {
+    "native_ok": "0/3",
+    "runs": [
+      {
+        "id": "cht000d288b@dx1a07ec80e082885503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "e.\n<execute_bash<arg_key>command</arg_key><arg_value>find /testbed -type f -name \"*.py\" | head -20</command>\n<execute_bash<arg_key>command</arg_key><arg_value>ls -la /testbed</command>\n</execute_bash>"
+      },
+      {
+        "id": "cht000d2da7@dx1a07ec82b202885503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "s in RTL tables. Let me start by exploring the repository structure and understanding the problem.\n<execute_bash><command>cd /testbed && find . -type f -name \"*.py\" | head -20</command></execute_bash>"
+      },
+      {
+        "id": "cht000d0964@dx1a07ec841fb2881503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "help you resolve this issue. Let's start by exploring the repository structure to understand the codebase.\n<execute_bash><command>find /testbed -type f -name \"*.py\" | head -20</command></execute_bash>"
+      }
+    ]
+  },
+  "exact_forced_RENAMED": {
+    "native_ok": "0/3",
+    "runs": [
+      {
+        "id": "cht000d373e@dx1a07ec860e62885503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "ables with `direction: rtl;`. Let me start by exploring the repository structure.\n<run_shell_cmd<arg_key>command</arg_key><arg_value>cd /testbed && find . -type f -name \"*.py\" | head -20</</tool_call>"
+      },
+      {
+        "id": "cht000dad71@dx1a07ec874fd29db503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "ucture.\n<run_shell_cmd<arg_key>command</arg_key><arg_value>find /testbed -type f -name \"*.py\" | head -20</</tool_call>>\n<run_shell_cmd<arg_key>command</arg_key><arg_value>ls -la /testbed</</tool_call>"
+      },
+      {
+        "id": "cht000d1762@dx1a07ec8912b2881503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": " table with `direction: rtl;` overlaps collapsed borders. Let me start by exploring the repository structure.\n<run_shell_cmd<arg_key>command</arg_key><arg_value>ls -la /testbed</arg_value></tool_call>"
+      }
+    ]
+  },
+  "exact_auto_ORIGNAME": {
+    "native_ok": "0/3",
+    "runs": [
+      {
+        "id": "cht000d42e4@dx1a07ec8a07b2885503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "d borders in RTL tables. Let me start by exploring the repository structure and understanding the problem.\n<execute_bash><command>find /testbed -type f -name \"*.py\" | head -20</command></execute_bash>"
+      },
+      {
+        "id": "cht000d6c42@dx1a07ec8afa229c4503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "tables with RTL direction. Let me start by exploring the repository structure.\n<execute_bash<arg_key>command</arg_key><arg_value>find /testbed -type f -name \"*.py\" | head -20</command>\n</execute_bash>"
+      },
+      {
+        "id": "cht000d36ae@dx1a07ec8cfd82875503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "I'll help you fix this issue. Let me start by exploring the repository structure to understand the codebase.\n<execute_bash<arg_key>command</arg_key><arg_value>ls -la /testbed/</execute_bash>"
+      }
+    ]
+  },
+  "exact_auto_RENAMED": {
+    "native_ok": "1/3",
+    "runs": [
+      {
+        "id": "cht000d2b8f@dx1a07ec8fdd92881503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": " start by exploring the repository structure.\n<run_shell_cmd<arg_key>command</arg_key><arg_value>find /testbed -type f -name \"*.py\" | grep -E \"(table|border|layout)\" | head -20</arg_value></tool_call>"
+      },
+      {
+        "id": "cht000dc1bf@dx1a07ec9137a29d9503",
+        "finish_reason": "stop",
+        "n_tool_calls": 0,
+        "content_tail": "p you fix this issue. Let me start by exploring the repository structure and understanding the problem.\n<run_shell_cmd<arg_key>command</arg_key><arg_value>cd /testbed && ls -la</arg_value></tool_call>"
+      },
+      {
+        "id": "cht000d5a8f@dx1a07ec924072885503",
+        "finish_reason": "tool_calls",
+        "n_tool_calls": 1,
+        "content_tail": " the problem.\n<run_shell_cmd<arg_key>command</arg_key><arg_value>find /testbed -type f -name \"*.py\" | grep -E \"(table|border|layout)\" | head -20</<arg_key>timeout</arg_key><arg_value>10</</tool_call>>"
+      }
+    ]
+  },
+  "exact_auto_RENAMEALL": {
+    "native_ok": "3/3",
+    "runs": [
+      {
+        "id": "cht000d86c0@dx1a07ec93e1929c4503",
+        "finish_reason": "tool_calls",
+        "n_tool_calls": 1,
+        "content_tail": "I'll start by exploring the repository structure to understand the codebase and then reproduce the issue."
+      },
+      {
+        "id": "cht000dd5c7@dx1a07ec9507929db503",
+        "finish_reason": "tool_calls",
+        "n_tool_calls": 1,
+        "content_tail": "I'll help you fix this issue with text overlapping collapsed borders in tables with `direction: rtl`. Let me start by exploring the repository structure."
+      },
+      {
+        "id": "cht000d67f3@dx1a07ec96ad72885503",
+        "finish_reason": "tool_calls",
+        "n_tool_calls": 1,
+        "content_tail": "I'll help you fix this issue. Let me start by exploring the repository structure to understand the codebase."
+      }
+    ]
+  }
+}

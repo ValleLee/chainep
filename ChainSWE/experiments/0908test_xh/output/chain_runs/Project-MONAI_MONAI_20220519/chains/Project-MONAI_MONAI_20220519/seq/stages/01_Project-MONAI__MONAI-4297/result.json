@@ -1,0 +1,78 @@
+{
+  "agent_error": null,
+  "agent_status": "completed",
+  "agent_type": "baseline",
+  "failure_type": "TEST_COMMAND_FAILED",
+  "finished_at": 1788844088.965235,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "Project-MONAI__MONAI-4297",
+  "mode": "seq",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 0,
+  "model_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "position": 1,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "f3e6ac6ddec3c770d8c8440e0dfb0271bc1b9f00",
+  "repo_head_before": "fdec959cc2fbe9f09ed8d95a26bf24a206de8113",
+  "repo_head_model": "6c371e288363b45c352c519048715c6f4ef7d858",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 695.418,
+  "started_at": 1788843393.5476341,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "error: repository lacks the necessary blob to perform 3-way merge.\nFalling back to direct application...\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "source /opt/miniconda3/bin/activate && conda activate testbed && cd /testbed && pytest -rA tests/test_grid_dataset.py",
+        "index": 1,
+        "rc": 1,
+        "seconds": 7.793,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/test_grid_dataset.py::TestGridPatchDataset::test_loading_dict",
+      "tests/test_grid_dataset.py::TestGridPatchDataset::test_loading_array"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 2,
+    "grading_mode": "chainswe_command",
+    "p2p": [
+      "tests/test_grid_dataset.py::TestGridPatchDataset::test_shape"
+    ],
+    "p2p_all_pass": false,
+    "p2p_total": 1,
+    "test_cmds": [
+      "source /opt/miniconda3/bin/activate && conda activate testbed && cd /testbed && pytest -rA tests/test_grid_dataset.py"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {},
+    "finish": 0,
+    "run_shell": 0
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

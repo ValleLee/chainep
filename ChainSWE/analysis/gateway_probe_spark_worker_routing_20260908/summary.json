@@ -1,0 +1,98 @@
+{
+  "n": 10,
+  "native_ok": 3,
+  "per_worker": {
+    "29c4503": {
+      "ok": 0,
+      "fail": 1
+    },
+    "29d9503": {
+      "ok": 2,
+      "fail": 0
+    },
+    "2885503": {
+      "ok": 1,
+      "fail": 3
+    },
+    "2881503": {
+      "ok": 0,
+      "fail": 2
+    },
+    "29db503": {
+      "ok": 0,
+      "fail": 1
+    }
+  },
+  "runs": [
+    {
+      "i": 0,
+      "id": "cht000d5848@dx1a07edae10b29c4503",
+      "worker_tail": "29c4503",
+      "finish_reason": "stop",
+      "n_tool_calls": 0
+    },
+    {
+      "i": 1,
+      "id": "cht000d9fba@dx1a07edafd1529d9503",
+      "worker_tail": "29d9503",
+      "finish_reason": "tool_calls",
+      "n_tool_calls": 2
+    },
+    {
+      "i": 2,
+      "id": "cht000d3950@dx1a07edb12342885503",
+      "worker_tail": "2885503",
+      "finish_reason": "stop",
+      "n_tool_calls": 0
+    },
+    {
+      "i": 3,
+      "id": "cht000da6e8@dx1a07edb27ab29d9503",
+      "worker_tail": "29d9503",
+      "finish_reason": "tool_calls",
+      "n_tool_calls": 1
+    },
+    {
+      "i": 4,
+      "id": "cht000d1a09@dx1a07edb42fb2881503",
+      "worker_tail": "2881503",
+      "finish_reason": "stop",
+      "n_tool_calls": 0
+    },
+    {
+      "i": 5,
+      "id": "cht000db8a0@dx1a07edb5e6e29db503",
+      "worker_tail": "29db503",
+      "finish_reason": "stop",
+      "n_tool_calls": 0
+    },
+    {
+      "i": 6,
+      "id": "cht000d4a5a@dx1a07edb75b32885503",
+      "worker_tail": "2885503",
+      "finish_reason": "stop",
+      "n_tool_calls": 0
+    },
+    {
+      "i": 7,
+      "id": "cht000d2a09@dx1a07edb984e2881503",
+      "worker_tail": "2881503",
+      "finish_reason": "stop",
+      "n_tool_calls": 0
+    },
+    {
+      "i": 8,
+      "id": "cht000d5655@dx1a07edbba3b2885503",
+      "worker_tail": "2885503",
+      "finish_reason": "tool_calls",
+      "n_tool_calls": 2
+    },
+    {
+      "i": 9,
+      "id": "cht000d5be5@dx1a07edbdb312885503",
+      "worker_tail": "2885503",
+      "finish_reason": "stop",
+      "n_tool_calls": 0
+    }
+  ]
+}

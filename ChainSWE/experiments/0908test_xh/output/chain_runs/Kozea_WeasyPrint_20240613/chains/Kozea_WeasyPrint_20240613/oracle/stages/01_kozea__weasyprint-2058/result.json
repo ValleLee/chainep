@@ -1,0 +1,79 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788839565.5563042,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "kozea__weasyprint-2058",
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 1199,
+  "model_patch_sha256": "8e584701bdfd214b567919a25d2dd36ba9a2156453f1a77c5340406e036feef6",
+  "position": 1,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "800199d540c5cdef2b0a013c0219d58076078f85",
+  "repo_head_before": "dcf70993db4d1610e7fa189b897afa990c80b6bb",
+  "repo_head_model": "80df0bc765b755994ff4b8760d4f1a7302f025ac",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1913.62,
+  "started_at": 1788837651.9365263,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "Applied patch to 'tests/draw/test_table.py' cleanly.\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/draw/test_table.py::test_tables_24_rtl'",
+        "index": 1,
+        "rc": 1,
+        "seconds": 1.762,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/draw/test_table.py::test_tables_24_rtl"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [],
+    "p2p_all_pass": false,
+    "p2p_total": 0,
+    "test_cmds": [
+      "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/draw/test_table.py::test_tables_24_rtl'"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {
+      "create": 2,
+      "str_replace": 1,
+      "view": 3
+    },
+    "finish": 0,
+    "run_shell": 23
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

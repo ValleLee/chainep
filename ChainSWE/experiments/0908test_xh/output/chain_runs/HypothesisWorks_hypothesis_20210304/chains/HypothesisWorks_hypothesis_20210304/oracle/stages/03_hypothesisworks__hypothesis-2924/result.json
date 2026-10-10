@@ -1,0 +1,101 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788842621.3211102,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "hypothesisworks__hypothesis-2924",
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 41964,
+  "model_patch_sha256": "34e08ff96e02e9dad11e023018566de0178ff871d3064a25d7373c43aeadfde5",
+  "position": 3,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "e2744344dd3c0f4f5d3effa209708683f7e9cfa6",
+  "repo_head_before": "e9340200dbcc103315b1ed6a6aced22d3804296e",
+  "repo_head_model": "d14e581fd0aef136e63d9bef6ce97919d393f45f",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1840.515,
+  "started_at": 1788840780.8062818,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "Applied patch to 'hypothesis-python/tests/cover/test_sampled_from.py' cleanly.\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning hypothesis-python/tests/cover/test_sampled_from.py",
+        "index": 1,
+        "rc": 1,
+        "seconds": 12.472,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_suggests_elements_instead_of_annotations"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_cannot_sample_sets",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_can_sample_sequence_without_warning",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_can_sample_ordereddict_without_warning",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_can_sample_enums",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_unsat_filtered_sampling",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_unsat_filtered_sampling_in_rejection_stage",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_easy_filtered_sampling",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_filtered_sampling_finds_rare_value",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_sets_of_samples",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_dicts_with_sampled_keys",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_lists_of_tuples_first_element_sampled_from",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_does_not_include_duplicates_even_when_duplicated_in_collection",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_sets_of_samples_with_chained_transformations",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_sets_of_samples_with_chained_transformations_slow_path",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_unsatisfiable_explicit_filteredstrategy_sampled",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_unsatisfiable_explicit_filteredstrategy_just",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_transformed_just_strategy",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_max_size_is_respected_with_unique_sampled_from",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_issue_2247_regression",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_mutability_1",
+      "hypothesis-python/tests/cover/test_sampled_from.py::test_mutability_2"
+    ],
+    "p2p_all_pass": false,
+    "p2p_total": 21,
+    "test_cmds": [
+      "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning hypothesis-python/tests/cover/test_sampled_from.py"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {
+      "create": 22,
+      "str_replace": 1,
+      "view": 31
+    },
+    "finish": 0,
+    "run_shell": 32
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

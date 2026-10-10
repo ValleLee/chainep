@@ -1,0 +1,42 @@
+{
+  "api_key_logged": false,
+  "cases": {
+    "auto": {
+      "content_looks_like_text_tool_call": true,
+      "content_present": true,
+      "finish_reason": "stop",
+      "http_status": 200,
+      "raw_tool_call_problems": [
+        "message.tool_calls is absent or empty"
+      ],
+      "raw_tool_calls_present": false,
+      "raw_tool_calls_valid": false,
+      "sdk": {
+        "available": true,
+        "message": {
+          "content": "I'll start by exploring the repository structure to understand the codebase and then work on reproducing the issue.\n<run_shell_cmd<arg_key>command</arg_key><arg_value>find /testbed -type f -name \"*.py\" | head -20</<arg_key>timeout</arg_key><arg_value>10</</tool_call>",
+          "provider_specific_fields": {
+            "reasoning_content": "Let me start by understanding the issue. The problem is about text in a table with `direction: rtl;` overlapping collapsed borders. Looking at the screenshot description, when a table has `direction: rtl` style, the leftmost and rightmost 'XX' text in the table cells overlap with the left and right borders.\n\nThe HTML example shows two tables:\n1. A table with `direction: ltr;` (left-to-right) - this should work fine\n2. A table with `direction: rtl;` (right-to-left) - this has the overlapping issue\n\nThe CSS includes:\n- `border-collapse: collapse;` on the table\n- Borders on `tr` elements (left and right)\n- Different cell styles with background colors and bottom borders\n\nThis is a WeasyPrint issue, which is a Python library for generating PDFs from HTML and CSS. Let me start by exploring the repository structure.\n\nSteps:\n1. Explore the repository structure\n2. Create a script to reproduce the issue\n3. Identify where the issue is in the code\n4. Fix the issue\n5. Test the fix\n\nLet me begin.",
+            "refusal": null
+          },
+          "reasoning_content": "Let me start by understanding the issue. The problem is about text in a table with `direction: rtl;` overlapping collapsed borders. Looking at the screenshot description, when a table has `direction: rtl` style, the leftmost and rightmost 'XX' text in the table cells overlap with the left and right borders.\n\nThe HTML example shows two tables:\n1. A table with `direction: ltr;` (left-to-right) - this should work fine\n2. A table with `direction: rtl;` (right-to-left) - this has the overlapping issue\n\nThe CSS includes:\n- `border-collapse: collapse;` on the table\n- Borders on `tr` elements (left and right)\n- Different cell styles with background colors and bottom borders\n\nThis is a WeasyPrint issue, which is a Python library for generating PDFs from HTML and CSS. Let me start by exploring the repository structure.\n\nSteps:\n1. Explore the repository structure\n2. Create a script to reproduce the issue\n3. Identify where the issue is in the code\n4. Fix the issue\n5. Test the fix\n\nLet me begin.",
+          "role": "assistant"
+        },
+        "parse_ok": true,
+        "tool_calls_present": false
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "verdict": "NO_NATIVE_TOOL_CALL"
+    }
+  },
+  "created_at": 1788835547.3641126,
+  "endpoint": "http://10.101.56.66:4081/chat/completions",
+  "model": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "schema_version": 1
+}

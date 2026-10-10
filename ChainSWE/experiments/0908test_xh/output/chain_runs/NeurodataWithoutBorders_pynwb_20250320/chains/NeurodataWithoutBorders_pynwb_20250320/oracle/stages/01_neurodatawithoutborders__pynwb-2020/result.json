@@ -1,0 +1,14 @@
+{
+  "failure_type": "INFRA_ERROR",
+  "infra_error": "TimeoutError: Agent bridge did not respond within 1920s",
+  "instance_id": "neurodatawithoutborders__pynwb-2020",
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "position": 1,
+  "prior_unresolved": false,
+  "recovered": false,
+  "resolved": false,
+  "schema_version": 1,
+  "traceback": "Traceback (most recent call last):\n  File \"/lg-home/cog8/lwli6/ChainSweExp/ChainSWE/scripts/chainswe_exp/docker_runtime.py\", line 399, in request\n    return self.responses.get(timeout=timeout)\n  File \"/usr/lib/python3.10/queue.py\", line 179, in get\n    raise Empty\n_queue.Empty\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/lg-home/cog8/lwli6/ChainSweExp/ChainSWE/scripts/chainswe_exp/runner.py\", line 387, in run_chain_mode\n    stage_result, stage_agent = run_stage(\n  File \"/lg-home/cog8/lwli6/ChainSweExp/ChainSWE/scripts/chainswe_exp/runner.py\", line 226, in run_stage\n    response = agent_process.request(\n  File \"/lg-home/cog8/lwli6/ChainSweExp/ChainSWE/scripts/chainswe_exp/docker_runtime.py\", line 401, in request\n    raise TimeoutError(f\"Agent bridge did not respond within {timeout}s\") from exc\nTimeoutError: Agent bridge did not respond within 1920s\n"
+}

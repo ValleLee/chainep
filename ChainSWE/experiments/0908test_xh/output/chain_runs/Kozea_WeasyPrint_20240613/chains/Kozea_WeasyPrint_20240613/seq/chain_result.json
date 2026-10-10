@@ -1,0 +1,252 @@
+{
+  "actual_chain_resolved": false,
+  "base_commit": "dcf70993db4d1610e7fa189b897afa990c80b6bb",
+  "complete": true,
+  "continuous_id": "Kozea_WeasyPrint_20240613",
+  "docker_image": "clisterqj/swechain:starryzhang__sweb.eval.x86_64.kozea_1776_weasyprint-2058",
+  "finished_at": 1788847115.4207296,
+  "mode": "seq",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "repo": "Kozea/WeasyPrint",
+  "schema_version": 1,
+  "seconds": 5551.724,
+  "stages": [
+    {
+      "agent_error": null,
+      "agent_status": "timeout",
+      "agent_type": "baseline",
+      "failure_type": "RESOLVED",
+      "finished_at": 1788843491.4972394,
+      "git_status_after": "",
+      "git_status_before": "",
+      "instance_id": "kozea__weasyprint-2058",
+      "mode": "seq",
+      "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+      "model_name": "xh-model",
+      "model_patch_bytes": 6002,
+      "model_patch_sha256": "aba0d237f9034a241c6df7d1cf013627d302ce834953bfd13ad236deedb8f684",
+      "position": 1,
+      "prior_unresolved": false,
+      "reasoning_effort": "medium",
+      "recovered": false,
+      "repo_head_after": "512eea1b9886c2a014aa02d188bd7d37e5f7c3f1",
+      "repo_head_before": "dcf70993db4d1610e7fa189b897afa990c80b6bb",
+      "repo_head_model": "e429a5cbbe6cce697f78991a60ad920e1a82e200",
+      "resolved": true,
+      "schema_version": 1,
+      "seconds": 1923.358,
+      "started_at": 1788841568.1393058,
+      "test_patch": {
+        "apply_rc": 0,
+        "check_rc": 0,
+        "empty": false,
+        "ok": true,
+        "output": "Applied patch to 'tests/draw/test_table.py' cleanly.\n",
+        "threeway": true
+      },
+      "tests": {
+        "all_tests_collected": null,
+        "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+        "command_results": [
+          {
+            "command": "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/draw/test_table.py::test_tables_24_rtl'",
+            "index": 1,
+            "rc": 0,
+            "seconds": 1.803,
+            "timeout": false
+          }
+        ],
+        "commands_all_zero": true,
+        "f2p": [
+          "tests/draw/test_table.py::test_tables_24_rtl"
+        ],
+        "f2p_all_pass": true,
+        "f2p_total": 1,
+        "grading_mode": "chainswe_command",
+        "p2p": [],
+        "p2p_all_pass": true,
+        "p2p_total": 0,
+        "test_cmds": [
+          "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/draw/test_table.py::test_tables_24_rtl'"
+        ]
+      },
+      "tool_call_stats": {
+        "file_editor": {
+          "create": 3,
+          "str_replace": 3,
+          "view": 2
+        },
+        "finish": 0,
+        "run_shell": 46
+      },
+      "usage": {
+        "api_rounds": 0,
+        "cached_input_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 0,
+        "noncached_input_tokens": 0,
+        "output_tokens": 0,
+        "peak_context_size": 0,
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "agent_error": null,
+      "agent_status": "timeout",
+      "agent_type": "baseline",
+      "failure_type": "AGENT_TIMEOUT",
+      "finished_at": 1788845299.8476903,
+      "git_status_after": "",
+      "git_status_before": "",
+      "instance_id": "kozea__weasyprint-2233",
+      "mode": "seq",
+      "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+      "model_name": "xh-model",
+      "model_patch_bytes": 1453,
+      "model_patch_sha256": "d600ea5de25fc9908d45bb353d03549c941f464e04dc9b7e1879e37f9e671659",
+      "position": 2,
+      "prior_unresolved": false,
+      "reasoning_effort": "medium",
+      "recovered": false,
+      "repo_head_after": "e43de68fc5c5151bd48f8ed8064f29bdf92cf068",
+      "repo_head_before": "512eea1b9886c2a014aa02d188bd7d37e5f7c3f1",
+      "repo_head_model": "030d69b4343259b40a6b9c85cd8c4872558c1fe2",
+      "resolved": false,
+      "schema_version": 1,
+      "seconds": 1807.753,
+      "started_at": 1788843492.0946686,
+      "test_patch": {
+        "apply_rc": 0,
+        "check_rc": 0,
+        "empty": false,
+        "ok": true,
+        "output": "Applied patch to 'tests/layout/test_flex.py' cleanly.\n",
+        "threeway": true
+      },
+      "tests": {
+        "all_tests_collected": null,
+        "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+        "command_results": [
+          {
+            "command": "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_auto_margin2'",
+            "index": 1,
+            "rc": 1,
+            "seconds": 1.335,
+            "timeout": false
+          }
+        ],
+        "commands_all_zero": false,
+        "f2p": [
+          "tests/layout/test_flex.py::test_flex_auto_margin2"
+        ],
+        "f2p_all_pass": false,
+        "f2p_total": 1,
+        "grading_mode": "chainswe_command",
+        "p2p": [],
+        "p2p_all_pass": false,
+        "p2p_total": 0,
+        "test_cmds": [
+          "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_auto_margin2'"
+        ]
+      },
+      "tool_call_stats": {
+        "file_editor": {
+          "create": 2
+        },
+        "finish": 0,
+        "run_shell": 7
+      },
+      "usage": {
+        "api_rounds": 0,
+        "cached_input_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 0,
+        "noncached_input_tokens": 0,
+        "output_tokens": 0,
+        "peak_context_size": 0,
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "agent_error": null,
+      "agent_status": "timeout",
+      "agent_type": "baseline",
+      "failure_type": "AGENT_TIMEOUT",
+      "finished_at": 1788847112.536267,
+      "git_status_after": "",
+      "git_status_before": "",
+      "instance_id": "kozea__weasyprint-2231",
+      "mode": "seq",
+      "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+      "model_name": "xh-model",
+      "model_patch_bytes": 9024,
+      "model_patch_sha256": "21bc5d4e4a1f892898be40b3c5ffbcad651391075ff6d7484c6a97750d9e7e31",
+      "position": 3,
+      "prior_unresolved": true,
+      "reasoning_effort": "medium",
+      "recovered": false,
+      "repo_head_after": "977be24ab138bf78367a95b57e919443e886ba02",
+      "repo_head_before": "e43de68fc5c5151bd48f8ed8064f29bdf92cf068",
+      "repo_head_model": "b145028885e81f969e47c68caa6ab30f0997b6d2",
+      "resolved": false,
+      "schema_version": 1,
+      "seconds": 1812.182,
+      "started_at": 1788845300.3543348,
+      "test_patch": {
+        "apply_rc": 0,
+        "check_rc": 0,
+        "empty": false,
+        "ok": true,
+        "output": "Applied patch to 'tests/layout/test_flex.py' cleanly.\n",
+        "threeway": true
+      },
+      "tests": {
+        "all_tests_collected": null,
+        "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+        "command_results": [
+          {
+            "command": "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_column_width'",
+            "index": 1,
+            "rc": 1,
+            "seconds": 1.468,
+            "timeout": false
+          }
+        ],
+        "commands_all_zero": false,
+        "f2p": [
+          "tests/layout/test_flex.py::test_flex_column_width"
+        ],
+        "f2p_all_pass": false,
+        "f2p_total": 1,
+        "grading_mode": "chainswe_command",
+        "p2p": [],
+        "p2p_all_pass": false,
+        "p2p_total": 0,
+        "test_cmds": [
+          "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_column_width'"
+        ]
+      },
+      "tool_call_stats": {
+        "file_editor": {
+          "create": 2,
+          "str_replace": 2,
+          "view": 1
+        },
+        "finish": 0,
+        "run_shell": 26
+      },
+      "usage": {
+        "api_rounds": 0,
+        "cached_input_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 0,
+        "noncached_input_tokens": 0,
+        "output_tokens": 0,
+        "peak_context_size": 0,
+        "reasoning_tokens": 0
+      }
+    }
+  ],
+  "started_at": 1788841563.6968007
+}

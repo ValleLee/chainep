@@ -1,0 +1,9 @@
+{
+  "total_noncached_input_tokens": 8256,
+  "total_cached_input_tokens": 243712,
+  "total_output_tokens": 5149,
+  "total_reasoning_tokens": 1941,
+  "peak_context_size": 9420,
+  "num_rounds": 40,
+  "num_summarizations": 0
+}

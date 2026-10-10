@@ -1,0 +1,77 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788845299.8476903,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "kozea__weasyprint-2233",
+  "mode": "seq",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 1453,
+  "model_patch_sha256": "d600ea5de25fc9908d45bb353d03549c941f464e04dc9b7e1879e37f9e671659",
+  "position": 2,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "e43de68fc5c5151bd48f8ed8064f29bdf92cf068",
+  "repo_head_before": "512eea1b9886c2a014aa02d188bd7d37e5f7c3f1",
+  "repo_head_model": "030d69b4343259b40a6b9c85cd8c4872558c1fe2",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1807.753,
+  "started_at": 1788843492.0946686,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "Applied patch to 'tests/layout/test_flex.py' cleanly.\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_auto_margin2'",
+        "index": 1,
+        "rc": 1,
+        "seconds": 1.335,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/layout/test_flex.py::test_flex_auto_margin2"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [],
+    "p2p_all_pass": false,
+    "p2p_total": 0,
+    "test_cmds": [
+      "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_auto_margin2'"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {
+      "create": 2
+    },
+    "finish": 0,
+    "run_shell": 7
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

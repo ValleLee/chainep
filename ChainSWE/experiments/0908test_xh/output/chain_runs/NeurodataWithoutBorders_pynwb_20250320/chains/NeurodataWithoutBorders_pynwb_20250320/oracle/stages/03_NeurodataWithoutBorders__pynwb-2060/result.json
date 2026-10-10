@@ -1,0 +1,108 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788843318.5258977,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "NeurodataWithoutBorders__pynwb-2060",
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 0,
+  "model_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "position": 3,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "b390c953271610c6f0f91a8d48774c5cc7a06f14",
+  "repo_head_before": "9828d5deb51167551cc0db98d8f1bf2bfb89c0fd",
+  "repo_head_model": "aac18b17357f6287697bec7d5cd6df85ac8e7b92",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1834.618,
+  "started_at": 1788841483.9079156,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "Applied patch to 'tests/unit/test_image.py' cleanly.\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "cd /pynwb && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning tests/unit/test_image.py",
+        "index": 1,
+        "rc": 1,
+        "seconds": 5.808,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_default_format"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_bits_per_pixel_deprecation",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_data_no_frame",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_data_no_unit",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_dimension_error",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_dimension_warning_external_file_with_rate",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_dimension_warning_external_file_with_timestamps",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_no_frame",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_no_unit",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_correct_format",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_correct_starting_frame",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_data",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_data_construct_mode",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_default_starting_frame",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_incorrect_format",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_incorrect_format_construct_mode",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_incorrect_starting_frame",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_external_file_with_incorrect_starting_frame_construct_mode",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_init",
+      "tests/unit/test_image.py::ImageSeriesConstructor::test_no_data_no_file",
+      "tests/unit/test_image.py::IndexSeriesConstructor::test_init",
+      "tests/unit/test_image.py::IndexSeriesConstructor::test_init_bad_unit",
+      "tests/unit/test_image.py::IndexSeriesConstructor::test_init_conversion_warning",
+      "tests/unit/test_image.py::IndexSeriesConstructor::test_init_indexed_ts",
+      "tests/unit/test_image.py::IndexSeriesConstructor::test_init_no_indexed_ts_or_timeseries",
+      "tests/unit/test_image.py::IndexSeriesConstructor::test_init_offset_warning",
+      "tests/unit/test_image.py::IndexSeriesConstructor::test_init_resolution_warning",
+      "tests/unit/test_image.py::ImageMaskSeriesConstructor::test_init",
+      "tests/unit/test_image.py::OpticalSeriesConstructor::test_init",
+      "tests/unit/test_image.py::OpticalSeriesConstructor::test_init_all_optional_fields_none",
+      "tests/unit/test_image.py::TestImageSubtypes::test_grayscale_image",
+      "tests/unit/test_image.py::TestImageSubtypes::test_rgb_image",
+      "tests/unit/test_image.py::TestImageSubtypes::test_rgba_image"
+    ],
+    "p2p_all_pass": false,
+    "p2p_total": 32,
+    "test_cmds": [
+      "cd /pynwb && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning tests/unit/test_image.py"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {},
+    "finish": 0,
+    "run_shell": 0
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

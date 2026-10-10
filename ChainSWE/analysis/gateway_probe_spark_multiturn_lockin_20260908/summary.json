@@ -1,0 +1,127 @@
+{
+  "cases": {
+    "T1_turn1_baseline": {
+      "native_ok": "1/6",
+      "runs": [
+        {
+          "id": "cht000dfabc@dx1a07edcddd829db503",
+          "worker": "29db503",
+          "finish_reason": "tool_calls",
+          "n": 1
+        },
+        {
+          "id": "cht000d7532@dx1a07edce93e2875503",
+          "worker": "2875503",
+          "finish_reason": "stop",
+          "n": 0
+        },
+        {
+          "id": "cht000db46a@dx1a07edcfd3029c4503",
+          "worker": "29c4503",
+          "finish_reason": "stop",
+          "n": 0
+        },
+        {
+          "id": "cht000db7e9@dx1a07edd10c129c4503",
+          "worker": "29c4503",
+          "finish_reason": "length",
+          "n": 0
+        },
+        {
+          "id": "cht000d95e3@dx1a07edd29632885503",
+          "worker": "2885503",
+          "finish_reason": "length",
+          "n": 0
+        },
+        {
+          "id": "cht000dc1c5@dx1a07edd469029c4503",
+          "worker": "29c4503",
+          "finish_reason": "stop",
+          "n": 0
+        }
+      ]
+    },
+    "T2_after_text_protocol": {
+      "native_ok": "0/6",
+      "runs": [
+        {
+          "id": "cht000d894c@dx1a07edd57652875503",
+          "worker": "2875503",
+          "finish_reason": "stop",
+          "n": 0
+        },
+        {
+          "id": "cht000d8be4@dx1a07edd66142875503",
+          "worker": "2875503",
+          "finish_reason": "stop",
+          "n": 0
+        },
+        {
+          "id": "cht000dcc43@dx1a07edd81c229c4503",
+          "worker": "29c4503",
+          "finish_reason": "stop",
+          "n": 0
+        },
+        {
+          "id": "cht000d1a2f@dx1a07edd8dfa29db503",
+          "worker": "29db503",
+          "finish_reason": "stop",
+          "n": 0
+        },
+        {
+          "id": "cht000dd340@dx1a07eddaa5f29c4503",
+          "worker": "29c4503",
+          "finish_reason": "stop",
+          "n": 0
+        },
+        {
+          "id": "cht000dd53e@dx1a07eddb66429c4503",
+          "worker": "29c4503",
+          "finish_reason": "stop",
+          "n": 0
+        }
+      ]
+    },
+    "T3_after_native_call": {
+      "native_ok": "6/6",
+      "runs": [
+        {
+          "id": "cht000d24fb@dx1a07eddcba429db503",
+          "worker": "29db503",
+          "finish_reason": "tool_calls",
+          "n": 1
+        },
+        {
+          "id": "cht000da06f@dx1a07eddde222875503",
+          "worker": "2875503",
+          "finish_reason": "tool_calls",
+          "n": 1
+        },
+        {
+          "id": "cht000d2b07@dx1a07edded4729db503",
+          "worker": "29db503",
+          "finish_reason": "tool_calls",
+          "n": 1
+        },
+        {
+          "id": "cht000d25b9@dx1a07eddfa8129d9503",
+          "worker": "29d9503",
+          "finish_reason": "tool_calls",
+          "n": 1
+        },
+        {
+          "id": "cht000dbcbe@dx1a07ede04802885503",
+          "worker": "2885503",
+          "finish_reason": "tool_calls",
+          "n": 1
+        },
+        {
+          "id": "cht000da980@dx1a07ede11002875503",
+          "worker": "2875503",
+          "finish_reason": "tool_calls",
+          "n": 1
+        }
+      ]
+    }
+  }
+}

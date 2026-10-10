@@ -1,0 +1,184 @@
+{
+  "chains": [
+    {
+      "continuous_id": "HypothesisWorks_hypothesis_20210304",
+      "docker_image": "clisterqj/swechain:swerebenchv2__hypothesisworks-hypothesis__2889-b4ea7ab",
+      "length": 3,
+      "repo": "HypothesisWorks/hypothesis"
+    },
+    {
+      "continuous_id": "Kozea_WeasyPrint_20240613",
+      "docker_image": "clisterqj/swechain:starryzhang__sweb.eval.x86_64.kozea_1776_weasyprint-2058",
+      "length": 3,
+      "repo": "Kozea/WeasyPrint"
+    },
+    {
+      "continuous_id": "NeurodataWithoutBorders_pynwb_20250320",
+      "docker_image": "clisterqj/swechain:swerebenchv2__neurodatawithoutborders-pynwb__2020-804aad8",
+      "length": 3,
+      "repo": "NeurodataWithoutBorders/pynwb"
+    },
+    {
+      "continuous_id": "Project-MONAI_MONAI_20220519",
+      "docker_image": "clisterqj/swechain:xingyaoww__sweb.eval.x86_64.project-monai_s_monai-4297",
+      "length": 3,
+      "repo": "Project-MONAI/MONAI"
+    },
+    {
+      "continuous_id": "Project-MONAI_MONAI_20220715",
+      "docker_image": "clisterqj/swechain:xingyaoww__sweb.eval.x86_64.project-monai_s_monai-4709",
+      "length": 3,
+      "repo": "Project-MONAI/MONAI"
+    },
+    {
+      "continuous_id": "Project-MONAI_MONAI_20220823",
+      "docker_image": "clisterqj/swechain:xingyaoww__sweb.eval.x86_64.project-monai_s_monai-4977",
+      "length": 3,
+      "repo": "Project-MONAI/MONAI"
+    },
+    {
+      "continuous_id": "brazilian-utils_brutils-python_20230331",
+      "docker_image": "clisterqj/swechain:swerebenchv2__brazilian-utils-brutils-python__54-30d7624",
+      "length": 3,
+      "repo": "brazilian-utils/brutils-python"
+    },
+    {
+      "continuous_id": "brazilian-utils_brutils-python_20230627",
+      "docker_image": "clisterqj/swechain:swerebenchv2__brazilian-utils-brutils-python__114-1b12ebf",
+      "length": 3,
+      "repo": "brazilian-utils/brutils-python"
+    },
+    {
+      "continuous_id": "copier-org_copier_20240418",
+      "docker_image": "clisterqj/swechain:swerebenchv2__copier-org-copier__1589-69662e3",
+      "length": 3,
+      "repo": "copier-org/copier"
+    },
+    {
+      "continuous_id": "joke2k_faker_20240904_f1f73942",
+      "docker_image": "clisterqj/swechain:starryzhang__sweb.eval.x86_64.joke2k_1776_faker-2096",
+      "length": 3,
+      "repo": "joke2k/faker"
+    },
+    {
+      "continuous_id": "keras-team_keras_20241123",
+      "docker_image": "clisterqj/swechain:swerebenchv2__keras-team-keras__20541-ceabd61",
+      "length": 3,
+      "repo": "keras-team/keras"
+    },
+    {
+      "continuous_id": "litestar-org_polyfactory_20231020",
+      "docker_image": "clisterqj/swechain:swerebenchv2__litestar-org-polyfactory__417-11f234c",
+      "length": 3,
+      "repo": "litestar-org/polyfactory"
+    },
+    {
+      "continuous_id": "meltano_sdk_20230727",
+      "docker_image": "clisterqj/swechain:swerebenchv2__meltano-sdk__1864-b1b3bd2",
+      "length": 3,
+      "repo": "meltano/sdk"
+    },
+    {
+      "continuous_id": "modin-project_modin_20250502_8f6222a1",
+      "docker_image": "clisterqj/swechain:swerebenchv2__modin-project-modin__7560-8f6222a",
+      "length": 3,
+      "repo": "modin-project/modin"
+    },
+    {
+      "continuous_id": "mwaskom_seaborn_20230102",
+      "docker_image": "clisterqj/swechain:swebench__sweb.eval.x86_64.mwaskom_1776_seaborn-3216",
+      "length": 3,
+      "repo": "mwaskom/seaborn"
+    },
+    {
+      "continuous_id": "oscal-compass_compliance-trestle_20240613",
+      "docker_image": "clisterqj/swechain:swerebenchv2__oscal-compass-compliance-trestle__1584-774e3cf",
+      "length": 3,
+      "repo": "oscal-compass/compliance-trestle"
+    },
+    {
+      "continuous_id": "pyccel_pyccel_20240307",
+      "docker_image": "clisterqj/swechain:swerebenchv2__pyccel-pyccel__1764-18be84d",
+      "length": 3,
+      "repo": "pyccel/pyccel"
+    },
+    {
+      "continuous_id": "reanahub_reana-client_20220201",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.reanahub_1776_reana-client-592",
+      "length": 3,
+      "repo": "reanahub/reana-client"
+    },
+    {
+      "continuous_id": "reata_sqllineage_20190726",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.reata_1776_sqllineage-17",
+      "length": 3,
+      "repo": "reata/sqllineage"
+    },
+    {
+      "continuous_id": "reata_sqllineage_20190812",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.reata_1776_sqllineage-38",
+      "length": 3,
+      "repo": "reata/sqllineage"
+    },
+    {
+      "continuous_id": "reata_sqllineage_20200323",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.reata_1776_sqllineage-40",
+      "length": 3,
+      "repo": "reata/sqllineage"
+    },
+    {
+      "continuous_id": "s-knibbs_dataclasses-jsonschema_20190711",
+      "docker_image": "clisterqj/swechain:swerebenchv2__s-knibbs-dataclasses-jsonschema__82-e79e8e1",
+      "length": 3,
+      "repo": "s-knibbs/dataclasses-jsonschema"
+    },
+    {
+      "continuous_id": "s-knibbs_dataclasses-jsonschema_20190712",
+      "docker_image": "clisterqj/swechain:swerebenchv2__s-knibbs-dataclasses-jsonschema__85-22aaa09",
+      "length": 3,
+      "repo": "s-knibbs/dataclasses-jsonschema"
+    },
+    {
+      "continuous_id": "stanfordnlp_dspy_20241008",
+      "docker_image": "clisterqj/swechain:starryzhang__sweb.eval.x86_64.stanfordnlp_1776_dspy-1556",
+      "length": 3,
+      "repo": "stanfordnlp/dspy"
+    },
+    {
+      "continuous_id": "tobymao_sqlglot_20240605",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.tobymao_1776_sqlglot-3605",
+      "length": 3,
+      "repo": "tobymao/sqlglot"
+    },
+    {
+      "continuous_id": "tobymao_sqlglot_20240909_1615bad9",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.tobymao_1776_sqlglot-4093",
+      "length": 3,
+      "repo": "tobymao/sqlglot"
+    },
+    {
+      "continuous_id": "tobymao_sqlglot_20240909_5771d8da",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.tobymao_1776_sqlglot-4087",
+      "length": 3,
+      "repo": "tobymao/sqlglot"
+    },
+    {
+      "continuous_id": "tobymao_sqlglot_20240910_b10255eb",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.tobymao_1776_sqlglot-4109",
+      "length": 3,
+      "repo": "tobymao/sqlglot"
+    },
+    {
+      "continuous_id": "tobymao_sqlglot_20241001",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.tobymao_1776_sqlglot-4194",
+      "length": 3,
+      "repo": "tobymao/sqlglot"
+    },
+    {
+      "continuous_id": "tobymao_sqlglot_20241222",
+      "docker_image": "clisterqj/swechain:swerebench__sweb.eval.x86_64.tobymao_1776_sqlglot-4545",
+      "length": 3,
+      "repo": "tobymao/sqlglot"
+    }
+  ]
+}

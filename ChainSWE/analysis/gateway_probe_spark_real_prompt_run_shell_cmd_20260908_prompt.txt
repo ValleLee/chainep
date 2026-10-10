@@ -1,0 +1,78 @@
+<uploaded_files>
+/testbed
+</uploaded_files>
+
+I've uploaded a python code repository in the directory /testbed (not in /tmp/inputs). Consider the following issue descriptions:
+
+<issue_description>
+Text in table with style="direction: rtl;" overlaps collapsed border
+The leftmost and rightmost 'XX' for the table (with `style="direction: rtl"`) at the bottom of the following screenshot overlap the left and right border:
+
+<img width="485" alt="Screenshot 2024-02-03 at 11 33 26 PM" src="https://github.com/Kozea/WeasyPrint/assets/5347201/a50ccce2-512b-4a03-b405-f0a361d4f541">
+
+
+
+Html adapted from http://test.weasyprint.org/suite-css21/chapter17/section18/test4/:
+
+```html
+<style>
+  table {
+  border-collapse:collapse;
+  margin-bottom: 1em;
+  }
+  tr {
+  border-left: 5px solid fuchsia;
+  border-right: 5px solid purple;
+  }
+  td.right {
+  background-color: yellow;
+  border-bottom: 5px solid orange;
+  }
+  td.left {
+  background-color: aqua;
+  border-bottom: 5px solid teal;
+  }
+</style>
+<table style="direction: ltr;">
+ <tr>
+ <td class="left">XX</td>
+ <td class="right">XX XX XX</td>
+ </tr>
+</table>
+
+
+<table style="direction: rtl;">
+  <tr>
+  <td class="right">XX XX XX</td>
+  <td class="left">XX</td>
+  </tr>
+</table>
+```
+
+Any pointers on where to troubleshoot?
+
+</issue_description>
+
+Can you help me implement the necessary changes to the repository so that the requirements specified in the <issue_description> are met?
+
+I've already taken care of all changes to any of the test files described in the <issue_description>. This means you DON'T have to modify the testing logic or any of the tests in any way!
+
+Also the development Python environment is already set up for you (i.e., all dependencies already installed), so you don't need to install other packages.
+
+Your task is to make the minimal changes to non-test files in the /testbed directory to ensure the <issue_description> is satisfied.
+
+Follow these steps to resolve the issue:
+
+1. As a first step, it might be a good idea to explore the repo to familiarize yourself with its structure.
+
+2. Create a script to reproduce the error and execute it with `python <filename.py>` using the run_shell_cmd tool to confirm the error
+
+- **Important:** If testing a Python package, add `import sys; sys.path.insert(0,'/testbed')` at the top of your script before package imports to ensure you're testing the local version, not an installed version.
+
+3. Edit the source code of the repo to resolve the issue
+
+4. Rerun your reproduce script and confirm that the error is fixed!
+
+5. Think about edge cases and make sure your fix handles them as well.
+
+Your thinking should be thorough and so it's fine if it's very long.

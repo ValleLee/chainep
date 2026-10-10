@@ -1,0 +1,121 @@
+{
+  "api_key_logged": false,
+  "cases": {
+    "auto": {
+      "content_looks_like_text_tool_call": false,
+      "content_present": false,
+      "finish_reason": "tool_calls",
+      "http_status": 200,
+      "raw_tool_call_problems": [],
+      "raw_tool_calls_present": true,
+      "raw_tool_calls_valid": true,
+      "sdk": {
+        "available": true,
+        "message": {
+          "provider_specific_fields": {
+            "reasoning_content": "The user wants me to call the diagnostic_echo function with text='gateway-probe'. They also say not to answer in plain text. Let me call the function.",
+            "refusal": null
+          },
+          "reasoning_content": "The user wants me to call the diagnostic_echo function with text='gateway-probe'. They also say not to answer in plain text. Let me call the function.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"text\":\"gateway-probe\"}",
+                "name": "diagnostic_echo"
+              },
+              "id": "call_39cd526d6f4d4e28bc7df658",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        },
+        "parse_ok": true,
+        "tool_calls_present": true
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "verdict": "NATIVE_TOOL_CALL_OK"
+    },
+    "baseline": {
+      "content_looks_like_text_tool_call": true,
+      "content_present": true,
+      "finish_reason": "length",
+      "http_status": 200,
+      "raw_tool_call_problems": [
+        "message.tool_calls is absent or empty"
+      ],
+      "raw_tool_calls_present": false,
+      "raw_tool_calls_valid": false,
+      "sdk": {
+        "available": true,
+        "message": {
+          "content": "I'm unable to fulfill this request. There is no `diagnostic_echo` function available in my current environment or capabilities — I don't have access to any external functions, tools, or code execution endpoints that could invoke such a function.\n\nIf you're expecting a specific diagnostic tool or API to be available, it may need to be configured or exposed in your environment first. Alternatively, if `diagnostic_echo` is meant to",
+          "provider_specific_fields": {
+            "reasoning_content": "The user is asking me to call a function called diagnostic_echo with the text 'gateway-probe' and to not answer in plain text. However, I don't have any function called diagnostic_echo available. There's no function calling capability provided in this conversation, and no such function exists in my standard capabilities.\n\nI should inform the user that I don't have access to a diagnostic_echo function. The instruction \"Do not answer in plain text\" is a bit odd — perhaps they want some kind of structured response or they expect the function to exist. Since I can't call a nonexistent function, I should explain that.\n\nI should be honest about my capabilities rather than pretending to call something. Let me respond appropriately.",
+            "refusal": null
+          },
+          "reasoning_content": "The user is asking me to call a function called diagnostic_echo with the text 'gateway-probe' and to not answer in plain text. However, I don't have any function called diagnostic_echo available. There's no function calling capability provided in this conversation, and no such function exists in my standard capabilities.\n\nI should inform the user that I don't have access to a diagnostic_echo function. The instruction \"Do not answer in plain text\" is a bit odd — perhaps they want some kind of structured response or they expect the function to exist. Since I can't call a nonexistent function, I should explain that.\n\nI should be honest about my capabilities rather than pretending to call something. Let me respond appropriately.",
+          "role": "assistant"
+        },
+        "parse_ok": true,
+        "tool_calls_present": false
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "verdict": "NO_NATIVE_TOOL_CALL"
+    },
+    "forced": {
+      "content_looks_like_text_tool_call": false,
+      "content_present": false,
+      "finish_reason": "tool_calls",
+      "http_status": 200,
+      "raw_tool_call_problems": [],
+      "raw_tool_calls_present": true,
+      "raw_tool_calls_valid": true,
+      "sdk": {
+        "available": true,
+        "message": {
+          "provider_specific_fields": {
+            "reasoning_content": "The user wants me to call the diagnostic_echo function with text='gateway-probe'. They also say not to answer in plain text. Let me call the function.",
+            "refusal": null
+          },
+          "reasoning_content": "The user wants me to call the diagnostic_echo function with text='gateway-probe'. They also say not to answer in plain text. Let me call the function.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"text\":\"gateway-probe\"}",
+                "name": "diagnostic_echo"
+              },
+              "id": "call_0190b2ec505d46cb9998a86d",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        },
+        "parse_ok": true,
+        "tool_calls_present": true
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "verdict": "NATIVE_TOOL_CALL_OK"
+    }
+  },
+  "created_at": 1788792592.693197,
+  "endpoint": "http://10.101.56.66:4081/chat/completions",
+  "model": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "schema_version": 1
+}

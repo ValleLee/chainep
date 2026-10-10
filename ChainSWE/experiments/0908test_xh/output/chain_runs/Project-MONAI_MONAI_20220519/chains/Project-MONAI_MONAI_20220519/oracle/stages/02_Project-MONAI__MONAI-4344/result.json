@@ -1,0 +1,87 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788841450.241671,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "Project-MONAI__MONAI-4344",
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 0,
+  "model_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "position": 2,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "f0482e6783f1c009933be038b170943bde160e79",
+  "repo_head_before": "a3b300ec5c5ed3111994f269a5ba3926616d432f",
+  "repo_head_model": "19f0272fe8b8d87c757ce3b47e62ee5b5af01c76",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1865.923,
+  "started_at": 1788839584.3191586,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "error: repository lacks the necessary blob to perform 3-way merge.\nFalling back to direct application...\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "source /opt/miniconda3/bin/activate && conda activate testbed && cd /testbed && pytest -rA tests/test_resize.py",
+        "index": 1,
+        "rc": 1,
+        "seconds": 10.514,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/test_resize.py::TestResize::test_correct_results_4"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [
+      "tests/test_resize.py::TestResize::test_invalid_inputs",
+      "tests/test_resize.py::TestResize::test_longest_shape_1",
+      "tests/test_resize.py::TestResize::test_longest_shape_0",
+      "tests/test_resize.py::TestResize::test_correct_results_0",
+      "tests/test_resize.py::TestResize::test_longest_shape_2",
+      "tests/test_resize.py::TestResize::test_correct_results_3",
+      "tests/test_resize.py::TestResize::test_longest_shape_3",
+      "tests/test_resize.py::TestResize::test_correct_results_2",
+      "tests/test_resize.py::TestResize::test_longest_infinite_decimals",
+      "tests/test_resize.py::TestResize::test_correct_results_1",
+      "tests/test_resize.py::TestResize::test_longest_shape_4"
+    ],
+    "p2p_all_pass": false,
+    "p2p_total": 11,
+    "test_cmds": [
+      "source /opt/miniconda3/bin/activate && conda activate testbed && cd /testbed && pytest -rA tests/test_resize.py"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {},
+    "finish": 0,
+    "run_shell": 0
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

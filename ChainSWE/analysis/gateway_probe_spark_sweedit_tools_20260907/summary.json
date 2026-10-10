@@ -1,0 +1,73 @@
+{
+  "api_key_logged": false,
+  "cases": {
+    "auto": {
+      "content_looks_like_text_tool_call": false,
+      "content_present": false,
+      "finish_reason": "tool_calls",
+      "http_status": 200,
+      "raw_tool_call_problems": [],
+      "raw_tool_calls_present": true,
+      "raw_tool_calls_valid": true,
+      "sdk": {
+        "available": false,
+        "error": "ModuleNotFoundError: No module named 'openai'"
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "verdict": "RAW_NATIVE_TOOL_CALL_OK_SDK_UNAVAILABLE"
+    },
+    "baseline": {
+      "content_looks_like_text_tool_call": false,
+      "content_present": true,
+      "finish_reason": "stop",
+      "http_status": 200,
+      "raw_tool_call_problems": [
+        "message.tool_calls is absent or empty"
+      ],
+      "raw_tool_calls_present": false,
+      "raw_tool_calls_valid": false,
+      "sdk": {
+        "available": false,
+        "error": "ModuleNotFoundError: No module named 'openai'"
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "verdict": "NO_NATIVE_TOOL_CALL"
+    },
+    "forced": {
+      "content_looks_like_text_tool_call": false,
+      "content_present": false,
+      "finish_reason": "tool_calls",
+      "http_status": 200,
+      "raw_tool_call_problems": [],
+      "raw_tool_calls_present": true,
+      "raw_tool_calls_valid": true,
+      "sdk": {
+        "available": false,
+        "error": "ModuleNotFoundError: No module named 'openai'"
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "verdict": "RAW_NATIVE_TOOL_CALL_OK_SDK_UNAVAILABLE"
+    }
+  },
+  "created_at": 1788792535.91756,
+  "endpoint": "http://10.101.56.66:4081/chat/completions",
+  "model": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "schema_version": 1
+}

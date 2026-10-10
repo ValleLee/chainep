@@ -1,0 +1,79 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788847112.536267,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "kozea__weasyprint-2231",
+  "mode": "seq",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 9024,
+  "model_patch_sha256": "21bc5d4e4a1f892898be40b3c5ffbcad651391075ff6d7484c6a97750d9e7e31",
+  "position": 3,
+  "prior_unresolved": true,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "977be24ab138bf78367a95b57e919443e886ba02",
+  "repo_head_before": "e43de68fc5c5151bd48f8ed8064f29bdf92cf068",
+  "repo_head_model": "b145028885e81f969e47c68caa6ab30f0997b6d2",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1812.182,
+  "started_at": 1788845300.3543348,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "Applied patch to 'tests/layout/test_flex.py' cleanly.\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_column_width'",
+        "index": 1,
+        "rc": 1,
+        "seconds": 1.468,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/layout/test_flex.py::test_flex_column_width"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [],
+    "p2p_all_pass": false,
+    "p2p_total": 0,
+    "test_cmds": [
+      "cd /testbed && pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning 'tests/layout/test_flex.py::test_flex_column_width'"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {
+      "create": 2,
+      "str_replace": 2,
+      "view": 1
+    },
+    "finish": 0,
+    "run_shell": 26
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

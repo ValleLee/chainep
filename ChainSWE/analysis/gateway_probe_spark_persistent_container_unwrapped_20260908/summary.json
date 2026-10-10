@@ -1,0 +1,42 @@
+{
+  "api_key_logged": false,
+  "cases": {
+    "forced": {
+      "content_looks_like_text_tool_call": true,
+      "content_present": true,
+      "finish_reason": "stop",
+      "http_status": 200,
+      "raw_tool_call_problems": [
+        "message.tool_calls is absent or empty"
+      ],
+      "raw_tool_calls_present": false,
+      "raw_tool_calls_valid": false,
+      "sdk": {
+        "available": true,
+        "message": {
+          "content": "I'll help you fix this issue with text overlapping collapsed borders in tables with `direction: rtl;`. Let me start by exploring the repository structure and understanding the problem.\n<execute_bash<arg_key>command</arg_key><arg_value>cd /testbed && ls -la</execute_bash>",
+          "provider_specific_fields": {
+            "reasoning_content": "Let me start by exploring the repository structure to understand the codebase.\n\nThe issue is about text in a table with `direction: rtl;` overlapping collapsed borders. This appears to be a CSS rendering issue in WeasyPrint, which is a Python library for generating PDFs from HTML and CSS.\n\nLet me begin by:\n1. Exploring the repo structure\n2. Understanding the problem\n3. Creating a reproduction script\n4. Finding the relevant code\n5. Fixing the issue\n\nLet's start with step 1.",
+            "refusal": null
+          },
+          "reasoning_content": "Let me start by exploring the repository structure to understand the codebase.\n\nThe issue is about text in a table with `direction: rtl;` overlapping collapsed borders. This appears to be a CSS rendering issue in WeasyPrint, which is a Python library for generating PDFs from HTML and CSS.\n\nLet me begin by:\n1. Exploring the repo structure\n2. Understanding the problem\n3. Creating a reproduction script\n4. Finding the relevant code\n5. Fixing the issue\n\nLet's start with step 1.",
+          "role": "assistant"
+        },
+        "parse_ok": true,
+        "tool_calls_present": false
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "verdict": "GATEWAY_RETURNED_TEXT_INSTEAD_OF_NATIVE_TOOL_CALL"
+    }
+  },
+  "created_at": 1788832499.5665777,
+  "endpoint": "http://10.101.56.66:4081/chat/completions",
+  "model": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "schema_version": 1
+}

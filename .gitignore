@@ -1,0 +1,20 @@
+# Local credentials, environments, caches and builds
+*.env
+**/.venv/
+**/.ruff_cache/
+**/.pytest_cache/
+**/__pycache__/
+*.py[cod]
+**/dist/
+**/*.whl
+*.log
+
+# Raw experiment outputs and gateway request/response captures
+/ChainSWE/experiments/**/output/
+/ChainSWE/experiments/**/output_invalid*/
+/ChainSWE/experiments/**/smoke_oracle_fullprompt_*/
+/ChainSWE/experiments/**/tools/bin/
+/ChainSWE/analysis/gateway_probe_spark_prompt_ablations_20260908/
+/ChainSWE/analysis/**/*.json
+!/ChainSWE/analysis/**/summary.json
+/ChainSWE/analysis/**/*.jsonl

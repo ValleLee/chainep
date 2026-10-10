@@ -1,0 +1,89 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788843326.5212882,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "Project-MONAI__MONAI-4721",
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 24472,
+  "model_patch_sha256": "5222ee428b2d94d74abc7ef5c45126afb6c2fc7accd086d19405414738d57f95",
+  "position": 3,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "da7fa157647b360a6495df1bdef91f20c49af26d",
+  "repo_head_before": "3c652d77c08be1b25bd10913475fabc1a4532a91",
+  "repo_head_model": "ceefab4bd2ce84c6bed3fa2f0cf1622eff9525c1",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1865.169,
+  "started_at": 1788841461.3525853,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "error: repository lacks the necessary blob to perform 3-way merge.\nFalling back to direct application...\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "source /opt/miniconda3/bin/activate && conda activate testbed && cd /testbed && pytest -rA tests/test_config_parser.py",
+        "index": 1,
+        "rc": 1,
+        "seconds": 7.766,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "tests/test_config_parser.py::TestConfigParser::test_config_content"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [
+      "tests/test_config_parser.py::TestConfigParser::test_list_expressions",
+      "tests/test_config_parser.py::TestConfigParser::test_parse_0",
+      "tests/test_config_parser.py::TestConfigParser::test_contains",
+      "tests/test_config_parser.py::TestConfigParser::test_function_0",
+      "tests/test_config_parser.py::TestConfigParser::test_allow_missing_reference_0",
+      "tests/test_config_parser.py::TestConfigParser::test_error_instance",
+      "tests/test_config_parser.py::TestConfigParser::test_macro_replace",
+      "tests/test_config_parser.py::TestConfigParser::test_relative_id_0",
+      "tests/test_config_parser.py::TestConfigParser::test_lambda_reference"
+    ],
+    "p2p_all_pass": false,
+    "p2p_total": 9,
+    "test_cmds": [
+      "source /opt/miniconda3/bin/activate && conda activate testbed && cd /testbed && pytest -rA tests/test_config_parser.py"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {
+      "create": 3,
+      "str_replace": 7,
+      "view": 6
+    },
+    "finish": 0,
+    "run_shell": 27
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

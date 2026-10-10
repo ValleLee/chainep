@@ -1,0 +1,38 @@
+{
+  "normalized": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  },
+  "raw": {
+    "agent": {
+      "num_rounds": 0,
+      "num_summarizations": 0,
+      "peak_context_size": 0,
+      "total_cached_input_tokens": 0,
+      "total_noncached_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_reasoning_tokens": 0
+    },
+    "llm_editor": {
+      "num_calls": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0
+    },
+    "llm_viewer": {
+      "num_calls": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0
+    },
+    "summarizer": {
+      "num_calls": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0
+    }
+  }
+}

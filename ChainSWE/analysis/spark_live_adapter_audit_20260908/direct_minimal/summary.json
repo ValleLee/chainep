@@ -1,0 +1,53 @@
+{
+  "api_key_logged": false,
+  "cases": {
+    "auto": {
+      "error": "UnboundLocalError: local variable 'available_names' referenced before assignment",
+      "verdict": "REQUEST_EXCEPTION"
+    },
+    "forced": {
+      "content_looks_like_text_tool_call": false,
+      "content_present": false,
+      "finish_reason": "tool_calls",
+      "http_status": 200,
+      "raw_tool_call_problems": [],
+      "raw_tool_calls_present": true,
+      "raw_tool_calls_valid": true,
+      "sdk": {
+        "available": true,
+        "message": {
+          "provider_specific_fields": {
+            "reasoning_content": "The user wants me to call the diagnostic_echo function with the text 'gateway-probe' and not answer in plain text. Let me call the function.",
+            "refusal": null
+          },
+          "reasoning_content": "The user wants me to call the diagnostic_echo function with the text 'gateway-probe' and not answer in plain text. Let me call the function.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"text\":\"gateway-probe\"}",
+                "name": "diagnostic_echo"
+              },
+              "id": "call_f4eb02d30c7b41438c7e1e6a",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        },
+        "parse_ok": true,
+        "tool_calls_present": true
+      },
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "total_tokens"
+      ],
+      "verdict": "NATIVE_TOOL_CALL_OK"
+    }
+  },
+  "created_at": 1788851450.7815557,
+  "endpoint": "http://10.101.56.66:4081/chat/completions",
+  "model": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "schema_version": 1
+}

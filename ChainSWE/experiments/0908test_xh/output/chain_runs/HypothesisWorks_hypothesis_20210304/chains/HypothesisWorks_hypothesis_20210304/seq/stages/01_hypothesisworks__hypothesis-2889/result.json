@@ -1,0 +1,83 @@
+{
+  "agent_error": null,
+  "agent_status": "timeout",
+  "agent_type": "baseline",
+  "failure_type": "AGENT_TIMEOUT",
+  "finished_at": 1788844509.134118,
+  "git_status_after": "",
+  "git_status_before": "",
+  "instance_id": "hypothesisworks__hypothesis-2889",
+  "mode": "seq",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "model_patch_bytes": 0,
+  "model_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "position": 1,
+  "prior_unresolved": false,
+  "reasoning_effort": "medium",
+  "recovered": false,
+  "repo_head_after": "67266866a392e9baae709ba0a42e10a2342c9e9f",
+  "repo_head_before": "b4ea7abcf0e362f72b7d5d8a8168d56f3b06e10f",
+  "repo_head_model": "974a47a2b03659f2cf1f7537e89db49c63e2a595",
+  "resolved": false,
+  "schema_version": 1,
+  "seconds": 1880.913,
+  "started_at": 1788842628.2212088,
+  "test_patch": {
+    "apply_rc": 0,
+    "check_rc": 0,
+    "empty": false,
+    "ok": true,
+    "output": "Applied patch to 'hypothesis-python/tests/nocover/test_recursive.py' cleanly.\n",
+    "threeway": true
+  },
+  "tests": {
+    "all_tests_collected": null,
+    "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+    "command_results": [
+      {
+        "command": "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning hypothesis-python/tests/nocover/test_recursive.py",
+        "index": 1,
+        "rc": 1,
+        "seconds": 14.468,
+        "timeout": false
+      }
+    ],
+    "commands_all_zero": false,
+    "f2p": [
+      "hypothesis-python/tests/nocover/test_recursive.py::test_self_ref_regression"
+    ],
+    "f2p_all_pass": false,
+    "f2p_total": 1,
+    "grading_mode": "chainswe_command",
+    "p2p": [
+      "hypothesis-python/tests/nocover/test_recursive.py::test_can_generate_with_large_branching",
+      "hypothesis-python/tests/nocover/test_recursive.py::test_can_generate_some_depth_with_large_branching",
+      "hypothesis-python/tests/nocover/test_recursive.py::test_can_find_quite_broad_lists",
+      "hypothesis-python/tests/nocover/test_recursive.py::test_drawing_many_near_boundary",
+      "hypothesis-python/tests/nocover/test_recursive.py::test_can_use_recursive_data_in_sets",
+      "hypothesis-python/tests/nocover/test_recursive.py::test_can_form_sets_of_recursive_data",
+      "hypothesis-python/tests/nocover/test_recursive.py::test_drawing_from_recursive_strategy_is_thread_safe"
+    ],
+    "p2p_all_pass": false,
+    "p2p_total": 7,
+    "test_cmds": [
+      "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning hypothesis-python/tests/nocover/test_recursive.py"
+    ]
+  },
+  "tool_call_stats": {
+    "file_editor": {},
+    "finish": 0,
+    "run_shell": 0
+  },
+  "usage": {
+    "api_rounds": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": null,
+    "input_tokens": 0,
+    "noncached_input_tokens": 0,
+    "output_tokens": 0,
+    "peak_context_size": 0,
+    "reasoning_tokens": 0
+  }
+}

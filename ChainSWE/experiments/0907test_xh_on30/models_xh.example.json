@@ -1,0 +1,22 @@
+{
+  "models": [
+    {
+      "name": "xh-model",
+      "api_type": "OPENAI",
+      "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+      "env": {
+        "OPENAI_API_KEY": "OPENAI_API_KEY",
+        "OPENAI_BASE_URL": "OPENAI_BASE_URL"
+      },
+      "values": {
+        "USE_RESPONSES_API": "false"
+      },
+      "pricing_snapshot_date": "YYYY-MM-DD",
+      "pricing_usd_per_million": {
+        "input": null,
+        "cached_input": null,
+        "output": null
+      }
+    }
+  ]
+}

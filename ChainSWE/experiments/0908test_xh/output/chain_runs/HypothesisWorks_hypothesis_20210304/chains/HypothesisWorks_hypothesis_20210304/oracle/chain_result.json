@@ -1,0 +1,214 @@
+{
+  "actual_chain_resolved": false,
+  "base_commit": "b4ea7abcf0e362f72b7d5d8a8168d56f3b06e10f",
+  "complete": false,
+  "continuous_id": "HypothesisWorks_hypothesis_20210304",
+  "docker_image": "clisterqj/swechain:swerebenchv2__hypothesisworks-hypothesis__2889-b4ea7ab",
+  "finished_at": 1788842623.409361,
+  "mode": "oracle",
+  "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+  "model_name": "xh-model",
+  "repo": "HypothesisWorks/hypothesis",
+  "schema_version": 1,
+  "seconds": 4979.353,
+  "stages": [
+    {
+      "failure_type": "INFRA_ERROR",
+      "infra_error": "TimeoutError: Agent bridge did not respond within 1920s",
+      "instance_id": "hypothesisworks__hypothesis-2889",
+      "mode": "oracle",
+      "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+      "model_name": "xh-model",
+      "position": 1,
+      "prior_unresolved": false,
+      "recovered": false,
+      "resolved": false,
+      "schema_version": 1,
+      "traceback": "Traceback (most recent call last):\n  File \"/lg-home/cog8/lwli6/ChainSweExp/ChainSWE/scripts/chainswe_exp/docker_runtime.py\", line 399, in request\n    return self.responses.get(timeout=timeout)\n  File \"/usr/lib/python3.10/queue.py\", line 179, in get\n    raise Empty\n_queue.Empty\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/lg-home/cog8/lwli6/ChainSweExp/ChainSWE/scripts/chainswe_exp/runner.py\", line 387, in run_chain_mode\n    stage_result, stage_agent = run_stage(\n  File \"/lg-home/cog8/lwli6/ChainSweExp/ChainSWE/scripts/chainswe_exp/runner.py\", line 226, in run_stage\n    response = agent_process.request(\n  File \"/lg-home/cog8/lwli6/ChainSweExp/ChainSWE/scripts/chainswe_exp/docker_runtime.py\", line 401, in request\n    raise TimeoutError(f\"Agent bridge did not respond within {timeout}s\") from exc\nTimeoutError: Agent bridge did not respond within 1920s\n"
+    },
+    {
+      "agent_error": null,
+      "agent_status": "completed",
+      "agent_type": "baseline",
+      "failure_type": "TEST_COMMAND_FAILED",
+      "finished_at": 1788840769.2171428,
+      "git_status_after": "",
+      "git_status_before": "",
+      "instance_id": "hypothesisworks__hypothesis-2915",
+      "mode": "oracle",
+      "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+      "model_name": "xh-model",
+      "model_patch_bytes": 7134,
+      "model_patch_sha256": "88f977715d987fa2718f39d244a147d6b8365e81dcc212eb2793343571b5b309",
+      "position": 2,
+      "prior_unresolved": false,
+      "reasoning_effort": "medium",
+      "recovered": false,
+      "repo_head_after": "9eb8cbd4007dad3dd95e7f359fd9da71aee26dcd",
+      "repo_head_before": "26b39b72a5c6c3624a0a58c0dfb2cd86c6a68a8c",
+      "repo_head_model": "e4bebb6a36c3e3ff55bdc00b2f74b6a3907c4c02",
+      "resolved": false,
+      "schema_version": 1,
+      "seconds": 1187.499,
+      "started_at": 1788839581.718399,
+      "test_patch": {
+        "apply_rc": 0,
+        "check_rc": 0,
+        "empty": false,
+        "ok": true,
+        "output": "Applied patch to 'hypothesis-python/tests/nocover/test_testdecorators.py' cleanly.\n",
+        "threeway": true
+      },
+      "tests": {
+        "all_tests_collected": null,
+        "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+        "command_results": [
+          {
+            "command": "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning hypothesis-python/tests/nocover/test_testdecorators.py",
+            "index": 1,
+            "rc": 1,
+            "seconds": 3.775,
+            "timeout": false
+          }
+        ],
+        "commands_all_zero": false,
+        "f2p": [
+          "hypothesis-python/tests/nocover/test_testdecorators.py::test_fixed_dict_preserves_iteration_order"
+        ],
+        "f2p_all_pass": false,
+        "f2p_total": 1,
+        "grading_mode": "chainswe_command",
+        "p2p": [
+          "hypothesis-python/tests/nocover/test_testdecorators.py::test_contains_the_test_function_name_in_the_exception_string",
+          "hypothesis-python/tests/nocover/test_testdecorators.py::test_signature_mismatch_error_message"
+        ],
+        "p2p_all_pass": false,
+        "p2p_total": 2,
+        "test_cmds": [
+          "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning hypothesis-python/tests/nocover/test_testdecorators.py"
+        ]
+      },
+      "tool_call_stats": {
+        "file_editor": {
+          "create": 3,
+          "str_replace": 3,
+          "view": 11
+        },
+        "finish": 1,
+        "run_shell": 28
+      },
+      "usage": {
+        "api_rounds": 0,
+        "cached_input_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 0,
+        "noncached_input_tokens": 0,
+        "output_tokens": 0,
+        "peak_context_size": 0,
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "agent_error": null,
+      "agent_status": "timeout",
+      "agent_type": "baseline",
+      "failure_type": "AGENT_TIMEOUT",
+      "finished_at": 1788842621.3211102,
+      "git_status_after": "",
+      "git_status_before": "",
+      "instance_id": "hypothesisworks__hypothesis-2924",
+      "mode": "oracle",
+      "model_id": "spark-x2.5-Code-PT-SWE-Pro-o-66",
+      "model_name": "xh-model",
+      "model_patch_bytes": 41964,
+      "model_patch_sha256": "34e08ff96e02e9dad11e023018566de0178ff871d3064a25d7373c43aeadfde5",
+      "position": 3,
+      "prior_unresolved": false,
+      "reasoning_effort": "medium",
+      "recovered": false,
+      "repo_head_after": "e2744344dd3c0f4f5d3effa209708683f7e9cfa6",
+      "repo_head_before": "e9340200dbcc103315b1ed6a6aced22d3804296e",
+      "repo_head_model": "d14e581fd0aef136e63d9bef6ce97919d393f45f",
+      "resolved": false,
+      "schema_version": 1,
+      "seconds": 1840.515,
+      "started_at": 1788840780.8062818,
+      "test_patch": {
+        "apply_rc": 0,
+        "check_rc": 0,
+        "empty": false,
+        "ok": true,
+        "output": "Applied patch to 'hypothesis-python/tests/cover/test_sampled_from.py' cleanly.\n",
+        "threeway": true
+      },
+      "tests": {
+        "all_tests_collected": null,
+        "audit_note": "F2P/P2P are treated as semantic diagnostics; official test_cmds exit status is authoritative.",
+        "command_results": [
+          {
+            "command": "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning hypothesis-python/tests/cover/test_sampled_from.py",
+            "index": 1,
+            "rc": 1,
+            "seconds": 12.472,
+            "timeout": false
+          }
+        ],
+        "commands_all_zero": false,
+        "f2p": [
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_suggests_elements_instead_of_annotations"
+        ],
+        "f2p_all_pass": false,
+        "f2p_total": 1,
+        "grading_mode": "chainswe_command",
+        "p2p": [
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_cannot_sample_sets",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_can_sample_sequence_without_warning",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_can_sample_ordereddict_without_warning",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_can_sample_enums",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_unsat_filtered_sampling",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_unsat_filtered_sampling_in_rejection_stage",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_easy_filtered_sampling",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_filtered_sampling_finds_rare_value",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_sets_of_samples",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_dicts_with_sampled_keys",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_lists_of_tuples_first_element_sampled_from",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_does_not_include_duplicates_even_when_duplicated_in_collection",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_sets_of_samples_with_chained_transformations",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_efficient_sets_of_samples_with_chained_transformations_slow_path",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_unsatisfiable_explicit_filteredstrategy_sampled",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_unsatisfiable_explicit_filteredstrategy_just",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_transformed_just_strategy",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_max_size_is_respected_with_unique_sampled_from",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_issue_2247_regression",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_mutability_1",
+          "hypothesis-python/tests/cover/test_sampled_from.py::test_mutability_2"
+        ],
+        "p2p_all_pass": false,
+        "p2p_total": 21,
+        "test_cmds": [
+          "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning hypothesis-python/tests/cover/test_sampled_from.py"
+        ]
+      },
+      "tool_call_stats": {
+        "file_editor": {
+          "create": 22,
+          "str_replace": 1,
+          "view": 31
+        },
+        "finish": 0,
+        "run_shell": 32
+      },
+      "usage": {
+        "api_rounds": 0,
+        "cached_input_tokens": 0,
+        "cost_usd": null,
+        "input_tokens": 0,
+        "noncached_input_tokens": 0,
+        "output_tokens": 0,
+        "peak_context_size": 0,
+        "reasoning_tokens": 0
+      }
+    }
+  ],
+  "started_at": 1788837644.0560427
+}

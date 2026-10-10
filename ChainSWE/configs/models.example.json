@@ -1,0 +1,51 @@
+{
+  "models": [
+    {
+      "name": "openai-model",
+      "api_type": "OPENAI",
+      "model_id": "replace-with-exact-model-id",
+      "env": {
+        "OPENAI_API_KEY": "OPENAI_API_KEY"
+      },
+      "values": {},
+      "pricing_snapshot_date": "YYYY-MM-DD",
+      "pricing_usd_per_million": {
+        "input": null,
+        "cached_input": null,
+        "output": null
+      }
+    },
+    {
+      "name": "anthropic-model",
+      "api_type": "ANTHROPIC",
+      "model_id": "replace-with-exact-model-id",
+      "env": {
+        "ANTHROPIC_API_KEY": "ANTHROPIC_API_KEY"
+      },
+      "values": {},
+      "pricing_snapshot_date": "YYYY-MM-DD",
+      "pricing_usd_per_million": {
+        "input": null,
+        "cached_input": null,
+        "output": null
+      }
+    },
+    {
+      "name": "openai-compatible-model",
+      "api_type": "OPENAI",
+      "model_id": "replace-with-exact-model-id",
+      "env": {
+        "OPENAI_API_KEY": "COMPATIBLE_API_KEY",
+        "OPENAI_BASE_URL": "COMPATIBLE_BASE_URL"
+      },
+      "values": {},
+      "pricing_snapshot_date": "YYYY-MM-DD",
+      "pricing_usd_per_million": {
+        "input": null,
+        "cached_input": null,
+        "output": null
+      }
+    }
+  ]
+}
+
